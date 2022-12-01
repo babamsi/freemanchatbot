@@ -9,11 +9,11 @@ class TextAreas extends React.Component {
         audio: null,
         url: ''
     }
-    componentWillMount() {
-        axios.post('http://localhost:8080/', {
-            Body:this.props.output
-        }).then(res => this.setState({audio: res.data})).catch(e => console.error(e))
-    }
+    // componentWillMount() {
+    //     axios.post('http://localhost:8080/', {
+    //         Body:this.props.output
+    //     }).then(res => this.setState({audio: res.data})).catch(e => console.error(e))
+    // }
     render() {
     
     
