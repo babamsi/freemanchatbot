@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://miro.medium.com/max/720/0*TLQkysP0ro_HpYX0');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow:hidden;
+  
+}
+body::after {
+  background-color: rgba(black, 0.7);
 }
 
 code {

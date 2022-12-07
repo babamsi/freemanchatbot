@@ -1,24 +1,26 @@
-import { Input } from "@nextui-org/react";
-import {useState} from 'react'
-import axios from 'axios'
-import {  SendIcon } from "./SendIcon";
-import { SendButton } from "./SendButton";
+
+import { createStyles, TextField } from '@mui/material'
+import { borderBottomColor } from '@mui/system'
+import React, {useState} from 'react'
+import './input.scss'
+
+const styles = createStyles({
+  notchedOutline: { borderBottomColor: '#f0f !important' },
+});
+
  const Inputs = ({input, setInput, requestHandler}) => {
-    
+    // const [toggle, setToggle] = useState(false)
     return (
-        <Input
-            clearable
-            contentRightStyling={false}
-            width="100%"
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            labelPlaceholder="Ask me anything..."
-            contentRight={
-              <SendButton onClick={requestHandler}>
-                <SendIcon />
-              </SendButton>
-            }
-          />
+      <>
+        
+      <div className="search-box">
+      <input className="search-input" type="text" name="" value={input} onChange={e => setInput(e.target.value)} placeholder="what are you thinking today.."/>
+      <span className="search-btn">
+        <i className="fas fa-search" onClick={requestHandler}></i>
+      </span>  
+     
+    </div>
+    </>
     )
 }
 
