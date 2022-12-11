@@ -31,11 +31,10 @@ export default function Navbars({checkNav, checked}) {
       <div id="abc">
     <nav>
         <ul>
-            <li><a href="#">UBAX <sup>beta</sup></a></li>
+            <li><a href="#">UBAX <sup>Beta</sup></a></li>
             
             <li>
-              <a href="#">
-            <Switch checked={checked} onChange={checkNav} />Somali </a></li>
+              </li>
         </ul>
     </nav>
 </div>

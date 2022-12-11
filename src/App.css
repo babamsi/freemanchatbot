@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 .dark {
   position:absolute;
       left:0;
@@ -6,3 +8,35 @@
       bottom:0;
       background-color: rgba(0, 0, 0, 0.65);
 }
+
+h2 {
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  left: 42%;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+}
+
+.close {
+  width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      margin: auto;
+      top: 90px;
+      right: 60px;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
